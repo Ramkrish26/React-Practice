@@ -8,7 +8,11 @@ import './App.css';
 // import EventBind from './components/EventBind';
 // import ParentComponent from './components/ParentComponent';
 // import ConditionalRendering from './components/ConditionalRendering';
-import NameList from './components/NameList';
+// import NameList from './components/NameList';
+// import Stylesheet from './components/Stylesheet';
+// import Inline from './components/Inline';
+// import CssModules from './components/CssModules';
+import Form from './components/Form';
 
 function App() {
   return (
@@ -28,8 +32,12 @@ function App() {
       <Message/>
       <Counter/>
       <ParentComponent/>
-      <ConditionalRendering/>*/}
+      <ConditionalRendering/>
       <NameList/>
+      <Stylesheet/>
+      <Inline/>
+      <CssModules/>*/}
+      <Form/>
     </div>
   );
 }
