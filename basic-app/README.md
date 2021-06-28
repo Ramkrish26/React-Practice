@@ -68,3 +68,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+## Shortcuts that can be used in React
+1. `<></> Empty tags` Used to represent a fragment
+
+### `ES7 extension`
+1. `RCE`    To create a class component
+2. `RFCE`   To create a funcitonal component
+3. `RCONST` To create a constructor inside a component
+4. `RPCE`   To create a pure component
+ 

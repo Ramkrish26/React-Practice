@@ -12,7 +12,13 @@ import './App.css';
 // import Stylesheet from './components/Stylesheet';
 // import Inline from './components/Inline';
 // import CssModules from './components/CssModules';
-import Form from './components/Form';
+// import Form from './components/Form';
+// import MountingLifecycle from './components/MountingLifecycle';
+// import LifecycleUpdating from './components/LifecycleUpdating';
+// import Fragments from './components/Fragments';
+// import PureComponents from './components/PureComponents';
+import RefsDemo from './components/RefsDemo';
+import PortalDemo from './components/PortalDemo';
 
 function App() {
   return (
@@ -36,8 +42,14 @@ function App() {
       <NameList/>
       <Stylesheet/>
       <Inline/>
-      <CssModules/>*/}
+      <CssModules/>
       <Form/>
+      <MountingLifecycle/>
+      <LifecycleUpdating/>
+      <Fragments/>
+      <PureComponents/>*/}
+      <RefsDemo/>
+      <PortalDemo/>
     </div>
   );
 }
