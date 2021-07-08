@@ -17,8 +17,12 @@ import './App.css';
 // import LifecycleUpdating from './components/LifecycleUpdating';
 // import Fragments from './components/Fragments';
 // import PureComponents from './components/PureComponents';
-import RefsDemo from './components/RefsDemo';
-import PortalDemo from './components/PortalDemo';
+// import RefsDemo from './components/RefsDemo';
+// import PortalDemo from './components/PortalDemo';
+// import ThrowError from './components/ThrowError';
+// import ErrorHandling from './components/ErrorHandling';
+import Counter from './components/Counter';
+import HoverCounter from './components/HoverCounter';
 
 function App() {
   return (
@@ -47,9 +51,20 @@ function App() {
       <MountingLifecycle/>
       <LifecycleUpdating/>
       <Fragments/>
-      <PureComponents/>*/}
+      <PureComponents/>
       <RefsDemo/>
-      <PortalDemo/>
+      <PortalDemo/>*/}
+      {/* <ErrorHandling>
+        <ThrowError heroName="Chris Hemsworth" />
+      </ErrorHandling>
+      <ErrorHandling>
+        <ThrowError heroName="Rock" />
+      </ErrorHandling>
+      <ErrorHandling>
+        <ThrowError heroName="Ram" />
+      </ErrorHandling> */}
+      <Counter/>
+      <HoverCounter/>      
     </div>
   );
 }
