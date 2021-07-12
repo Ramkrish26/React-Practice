@@ -21,8 +21,10 @@ import './App.css';
 // import PortalDemo from './components/PortalDemo';
 // import ThrowError from './components/ThrowError';
 // import ErrorHandling from './components/ErrorHandling';
-import Counter from './components/Counter';
-import HoverCounter from './components/HoverCounter';
+// import Counter from './components/Counter';
+// import HoverCounter from './components/HoverCounter';
+import ContextA from './components/ContextA';
+import {UserContextProvider } from './components/ContextUser';
 
 function App() {
   return (
@@ -63,8 +65,11 @@ function App() {
       <ErrorHandling>
         <ThrowError heroName="Ram" />
       </ErrorHandling> */}
-      <Counter/>
-      <HoverCounter/>      
+      {/* <Counter/> */}
+      {/* <HoverCounter/>       */}
+      <UserContextProvider value ='Ram'>
+      <ContextA/>
+      </UserContextProvider>      
     </div>
   );
 }
