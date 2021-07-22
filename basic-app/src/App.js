@@ -23,8 +23,10 @@ import './App.css';
 // import ErrorHandling from './components/ErrorHandling';
 // import Counter from './components/Counter';
 // import HoverCounter from './components/HoverCounter';
-import ContextA from './components/ContextA';
-import {UserContextProvider } from './components/ContextUser';
+// import ContextA from './components/ContextA';
+// import {UserContextProvider } from './components/ContextUser';
+// import CounterUsingReduxFunctional from './components/CounterUsingReduxFunctional';
+import CounterUsingReduxClass from './components/CounterUsingReduxClass';
 
 function App() {
   return (
@@ -67,9 +69,11 @@ function App() {
       </ErrorHandling> */}
       {/* <Counter/> */}
       {/* <HoverCounter/>       */}
-      <UserContextProvider value ='Ram'>
+      {/* <UserContextProvider value ='Ram'>
       <ContextA/>
-      </UserContextProvider>      
+      </UserContextProvider>       */}
+      {/* <CounterUsingReduxFunctional/> */}
+      <CounterUsingReduxClass/>
     </div>
   );
 }
