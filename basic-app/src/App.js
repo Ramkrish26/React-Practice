@@ -26,7 +26,9 @@ import './App.css';
 // import ContextA from './components/ContextA';
 // import {UserContextProvider } from './components/ContextUser';
 // import CounterUsingReduxFunctional from './components/CounterUsingReduxFunctional';
-import CounterUsingReduxClass from './components/CounterUsingReduxClass';
+// import CounterUsingReduxClass from './components/CounterUsingReduxClass';
+// import CounterUsingReduxToolkit from './components/ReduxToolkit/CounterUsingReduxToolkit';
+import UseStateHook from './components/Hooks/UseStateHook';
 
 function App() {
   return (
@@ -73,7 +75,9 @@ function App() {
       <ContextA/>
       </UserContextProvider>       */}
       {/* <CounterUsingReduxFunctional/> */}
-      <CounterUsingReduxClass/>
+      {/* <CounterUsingReduxClass/> */}
+      {/* <CounterUsingReduxToolkit/> */}
+      <UseStateHook/>
     </div>
   );
 }

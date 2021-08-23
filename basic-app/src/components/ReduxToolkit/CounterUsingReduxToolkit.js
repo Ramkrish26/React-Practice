@@ -1,21 +1,22 @@
-import React, {useState} from 'react'
+import React,{useState} from 'react'
+import { counterActions } from './CounterStore';
 import { useSelector, useDispatch } from 'react-redux'
 
-function CounterUsingReduxFunctional() {
+function CounterUsingReduxToolkit() {
 
     const [incValue, setIncValue] = useState(1);
 
-    const counter = useSelector(state => state.counter)
+    const count = useSelector((state) => state.counter)
 
     const dispatch = useDispatch();
 
     const incrementCounter = () => {
-        dispatch({type : 'increment', count:parseInt(incValue)});
+        dispatch(counterActions.increaseBy(parseInt(incValue)));
     }
 
     return (
         <div>
-            <h1>Counter {counter}</h1>
+            <h1>Counter {count}</h1>
             <label>Set increment value : </label>
             <input onChange={(e) => {setIncValue(e.target.value)}}></input><br/>
             <button onClick={incrementCounter}>Increment</button>
@@ -23,4 +24,4 @@ function CounterUsingReduxFunctional() {
     )
 }
 
-export default CounterUsingReduxFunctional
+export default CounterUsingReduxToolkit
