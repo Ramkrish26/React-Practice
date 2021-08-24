@@ -28,7 +28,9 @@ import './App.css';
 // import CounterUsingReduxFunctional from './components/CounterUsingReduxFunctional';
 // import CounterUsingReduxClass from './components/CounterUsingReduxClass';
 // import CounterUsingReduxToolkit from './components/ReduxToolkit/CounterUsingReduxToolkit';
-import UseStateHook from './components/Hooks/UseStateHook';
+// import UseStateHook from './components/Hooks/UseStateHook';
+// import UseEffectHook from './components/Hooks/UseEffectHook';
+import MouseEventListener from './components/Hooks/MouseEventListener';
 
 function App() {
   return (
@@ -77,7 +79,9 @@ function App() {
       {/* <CounterUsingReduxFunctional/> */}
       {/* <CounterUsingReduxClass/> */}
       {/* <CounterUsingReduxToolkit/> */}
-      <UseStateHook/>
+      {/* <UseStateHook/> */}
+      {/* <UseEffectHook/> */}
+      <MouseEventListener/>
     </div>
   );
 }
