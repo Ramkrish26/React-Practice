@@ -23,14 +23,14 @@ import './App.css';
 // import ErrorHandling from './components/ErrorHandling';
 // import Counter from './components/Counter';
 // import HoverCounter from './components/HoverCounter';
-// import ContextA from './components/ContextA';
-// import {UserContextProvider } from './components/ContextUser';
+import ContextA from './components/ContextA';
+import {UserContextProvider , LoginContextProvider} from './components/ContextUser';
 // import CounterUsingReduxFunctional from './components/CounterUsingReduxFunctional';
 // import CounterUsingReduxClass from './components/CounterUsingReduxClass';
 // import CounterUsingReduxToolkit from './components/ReduxToolkit/CounterUsingReduxToolkit';
 // import UseStateHook from './components/Hooks/UseStateHook';
 // import UseEffectHook from './components/Hooks/UseEffectHook';
-import MouseEventListener from './components/Hooks/MouseEventListener';
+// import MouseEventListener from './components/Hooks/MouseEventListener';
 
 function App() {
   return (
@@ -73,15 +73,17 @@ function App() {
       </ErrorHandling> */}
       {/* <Counter/> */}
       {/* <HoverCounter/>       */}
-      {/* <UserContextProvider value ='Ram'>
-      <ContextA/>
-      </UserContextProvider>       */}
+      <UserContextProvider value ='Ram krish'>
+        <LoginContextProvider value = 'Logged in'>
+        <ContextA/>
+        </LoginContextProvider>      
+      </UserContextProvider>      
       {/* <CounterUsingReduxFunctional/> */}
       {/* <CounterUsingReduxClass/> */}
       {/* <CounterUsingReduxToolkit/> */}
       {/* <UseStateHook/> */}
       {/* <UseEffectHook/> */}
-      <MouseEventListener/>
+      {/* <MouseEventListener/> */}
     </div>
   );
 }
