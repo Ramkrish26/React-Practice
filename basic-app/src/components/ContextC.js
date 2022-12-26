@@ -1,14 +1,28 @@
 import React, { Component } from 'react'
-import { UserContextConsumer } from './ContextUser'
+import { UserContextConsumer , LoginContextConsumer} from './ContextUser'
 
 class ContextC extends Component {
     render() {
         return (
-            <UserContextConsumer>
+            <div>
+                <UserContextConsumer>
                 {
-                    (userName) => <div>Hi from {userName} in context</div> 
+                    (userName) => {
+                        return(
+                            <LoginContextConsumer>
+                                {
+                                    (login) => {
+                                         return (
+                                            <div>Hi from {userName} in context is {login}</div>
+                                         )
+                                    }
+                                }
+                            </LoginContextConsumer>
+                        )
+                    } 
                 }
             </UserContextConsumer>
+            </div>            
         )
     }
 }
